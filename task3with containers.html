@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container {
+            height: 500px;
+            /* width: 125%; */
+            background-color: aqua;
+            border-radius: 25px;
+            position: relative;
+        }
+
+        .container .nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container .nav .menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .container .nav .menu a {
+            text-decoration: none;
+            margin: 20px;
+            color: white;
+        }
+
+        .container .nav .contact {
+            color: white;
+            margin: 20px;
+        }
+
+        .container .nav .contact a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container .content .content1 {
+            color: white;
+            width: 370px;
+            position: absolute;
+            top: 100px;
+            left: 150px;
+        }
+
+        .container .content .image {
+            position: absolute;
+            height: 300px;
+            width: 400px;
+            right: 100px;
+            top: 100px;
+        }
+
+        .container .content .content1 button {
+            text-decoration: none;
+            color: blue;
+            background-color: brown;
+            margin-left: 50px;
+            border-radius: 100px;
+            height: 50px;
+            width: 100px;
+        }
+
+        .container .content .content1 button a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul class="menu">
+                <li><a href=""><i class="fa-solid fa-bars"></i></a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+
+            </ul>
+            <ul class="contact">
+                <li><a href="">Contact us</a></li>
+            </ul>
+
+        </div>
+        <div class="content">
+            <div class="content1">
+                <h1>Simple Web <br>Design</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloremque pariatur assumenda est
+                    provident sed earum enim, necessitatibus modi ducimus omnis consectetur laudantium atque labore
+                    voluptatibus quo? Consectetur, laudantium natus!</p>
+                <button><a href="">Portfolio</a></button>
+
+            </div>
+            <img class="image" src="2025 IMAGES/Ferrari 1.0.1.jpeg" alt="">
+
+        </div>
+</body>
+
+</html>

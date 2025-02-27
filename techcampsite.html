@@ -5,33 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .container {
-            height: 650px;
             width: 100%;
             position: relative;
         }
 
         .container .nav {
+            width: 100%;
             display: flex;
             justify-content: space-between;
+            position: fixed;
+            background-color: black;
+            z-index: 1000;
+            padding: 5px;
+            top: 0%;
         }
 
         .container .nav ul {
             display: flex;
-            list-style-type: none;
             justify-content: space-between;
+            margin-left: 130px;
+        }
+
+        .container .nav ul li {
+            list-style: none;
+            top: 0;
         }
 
         .container .nav ul a {
             text-decoration: none;
             margin-left: 90px;
-            color: black;
+            color: white;
 
         }
 
-        .container .image {
-            position: absolute
+        .container .hero {
+            position: relative;
+        }
+
+        .container .hero img {
+            width: 100%;
         }
 
         .container .centered h1 {
@@ -39,24 +56,27 @@
         }
 
         .container .centered h2 {
-            color: #5F3618;
+            color: #F29E03;
         }
 
-        .container .centered {
+        .container .hero .centered {
             position: absolute;
-            bottom: 70px;
-            right: 70x;
-            margin: auto;
-
+            top: 500px;
+            left: 30%;
+            bottom: 0;
+            transform: -50% -50%;
+            text-align: center;
         }
 
         .container .centered button {
             position: absolute;
             background-color: #FFA500;
-            width: 200px;
-            height: 50px;
-            bottom: auto;
+            width: 270px;
+            height: 40px;
             color: white;
+            margin-right: 20%;
+
+
         }
 
         .container .centered button:hover {
@@ -86,8 +106,107 @@
         .container .centered h1 span {
             color: #FFA500;
         }
-        .video{
-            margin: auto;
+
+
+        .container .video {
+            text-align: center;
+        }
+
+        .container .cards {
+            display: flex;
+            justify-content: space-between;
+            padding: 100px;
+        }
+
+        .container .cards .card {
+            width: 300px;
+            text-align: center;
+        }
+
+        .container .cards .card img {
+            width: 200px;
+
+        }
+
+        .container .cards .card h3 {
+            color: #FEB125;
+        }
+
+        .container .cards .card p span {
+            color: hsl(39, 99%, 61%);
+            font-weight: bold;
+        }
+
+        .container2 {
+            position: relative;
+        }
+
+        .container2 img {
+            position: absolute;
+            height: 400px;
+        }
+
+        .container2 .textblock {
+            position: absolute;
+            bottom: 20px;
+            height: 400px;
+            left: 500px;
+            right: 120px;
+            background-color: #303543;
+            color: white;
+            top: 50px;
+            padding-left: 20px;
+            padding-right: 30px;
+        }
+
+        .container2 .textblock button {
+            position: absolute;
+            background-color: #FFA500;
+            width: 300px;
+            height: 50px;
+            color: white;
+            right: 25%;
+            bottom: 20px;
+
+        }
+
+        .container2 .textblock button:hover {
+            background-color: grey;
+            border-radius: 20px;
+        }
+
+        .container2 .textblock h4 {
+            text-align: center;
+        }
+
+        .container2 .textblock p span {
+            color: #FFA500;
+            font-weight: bolder;
+        }
+
+        .container3 img {
+            position: absolute;
+            margin-top: 470px;
+            width: 100%;
+        }
+
+        .container3 .cards {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .container3 .cards .card {
+            width: 300px;
+            bottom: 100%;
+            margin-top: 550px;
+
+        }
+
+        .container3 .cards .card img h2 span {
+            color: #20B2AA;
+
         }
     </style>
 </head>
@@ -103,24 +222,108 @@
                 <li><a href="">STUDENT PORTAL</a></li>
             </ul>
         </div>
-        <div class="container">
+        <div class="hero">
             <img src="2025 IMAGES/techcamp imaged use this one.jpg" alt="">
+            <div class="centered">
+                <h1><span>T</span>ECH CAMP</h1>
+                <h2>ADVANCED TECHNOLOGY HUB</h2>
+                <a href=""><button>ENROLL TO CERTFICATION TRAINING</button></a>
+            </div>
+
         </div>
-        <div class="centered">
-            <h1><span>T</span>ECH CAMP</h1>
-            <h2>ADVANCED TECHNOLOGY HUB</h2>
-            <a href=""><button>ENROLL TO CERTFICATION TRAINING</button></a>
+        <div class="video">
+            <h3>WE DONT JUST LEARN,<br>WE BUILD</h3>
+            <h4>REAL WORLD APPLICATIONS</h4>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nNCVMR4xTdo?si=FiP7SeWy52OyGv48"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <h3>WE DONT JUST LEARN,<br>WE BUILD</h3>
-        <h4>REAL WORLD APPLICATIONS</h4>
-    </div>
-        <div class="vid">
-            <iframe src="" frameborder="0"><iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/nNCVMR4xTdo?si=y5Qmz4opQpAqY7kO" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+        <div class="cards">
+            <div class="card">
+                <img class=image src="2025 IMAGES/techcamp-online.jpg" alt="">
+                <h3>1. Certification Trainings(Online & In-class Training)</h3>
+                <p>Our trainings are available both<span> In-class</span> <span style="color:black;font-weight:bold"> or
+                    </span><span> Onlined based</span> Online based
+                    sessions. You get <span>step by step guidance</span> from the trainer in the sessions. The trainer
+                    shares their screen and guides you through the programming
+                    session. Trainees share their screen for <span style="color:black;font-weight:bold">code
+                        review</span>and<span style="color:black;font-weight:bold"> error solving.</span></p>
+            </div>
+            <div class="card">
+                <img src="2025 IMAGES/techcamp-easy.png" alt="">
+                <h3>2. Only Requirement is to have your own laptop.</h3>
+                <p>Regardless of your <span>Level of Education </span> or <span>Background of study</span>
+                    can get into software development.
+                    <span style="color:black;font-weight:bold">By joining our step by step guided training</span> and
+                    your growth is <span style="color:black;font-weight:bold">fast-paced.</span> We have students from
+                    the
+                    <span>age of 13- 40 </span>learning and applying programming skills.
+                </p>
+            </div>
+            <div class="card">
+                <img src="2025 IMAGES/techcamp-trainers.jpg" alt="">
+                <h3>3. Join Campers Group and Get Involved in Internal Projects.</h3>
+                <p>The campers group has a network of <span
+                        style="color:black;font-weight:bold">technologists/trainers</span> who are brilliant tech
+                    researchers where
+                    you get access to the <span style="color:black;font-weight:bold">latest tech skills</span> and job
+                    readiness . We absorb the most <span>outstanding
+                        trainees </span>to
+                    join our <span style="color:black;font-weight:bold">internal projects</span>internal projects as
+                    Junior Software Developers.</p>
+            </div>
         </div>
+        <div class="container2">
+            <img src="2025 IMAGES/bext coding school tech camp.webp" alt="">
+            <div class="textblock">
+                <h4>OUR MAJOR COURSES</h4>
+                <P><span>1. Certification in Software Development</span>-"This a comprehensive beginner course which
+                    lasts
+                    for 3
+                    months, afternoon/evening and either online live-stream or physical in Nairobi CBD. The course
+                    covers an
+                    end-to-end curriculum where you finally end up buildling an online system. Training covers
+                    <span>HTML/CSS/JavaScript,</span> Python Programming and <span>PostgreSQL..</span>"
+                </P>
+                <p><span>2. Certification in Android App Development</span>-"This a comprehensive beginner course which
+                    lasts for 3
+                    months, afternoon/evening and either online live-stream or physical in Nairobi CBD. The course
+                    covers
+                    how to build a modern android application and publishing it to the <span>Google PlayStore."</span>
+                </p>
+                <div class="button">
+                    <a href=""><button>APPLY FOR NEXT INTAKE</button></a>
+                </div>
+            </div>
+            <div>
+            </div>
+            <div class="container3">
+                <img src="2025 IMAGES/techcampke use this.png" alt="">
+                <div class="cards">
+                    <div class="card">
+                        <a href=""><i class="fa-solid fa-droplet fa-lg" style="color: #c4c6ca;"></i></a>
+                        <h2><span>894</span></h2>
+                        <p>TRAINED STUDENTS</p>
+                    </div>
+                    <div class="card">
+                        <a href=""><i class="fa-solid fa-trophy fa-lg" style="color: #ebedf0;"></i></a>
+                        <h2><span>115</span></h2>
+                        <p>WEBSITES AND APPS BUILT</p>
+                    </div>
+                    <div class="card">
+                        <a href=""><i class="fa-solid fa-paper-plane fa-lg" style="color: #dcdfe4;"></i></a>
+                        <h2>37</h2>
+                        <p>OUR PARTNERSHIPS</p>
+                    </div>
+                    <div class="card">
+                        <a href=""><i class="fa-solid fa-user fa-lg" style="color: #d9dce3;"></i></a>
+                        <h2>7</h2>
+                        <p>YEARS OF EXISTENCE</p>
+                    </div>
+                </div>
+            </div>
 
 </body>
 

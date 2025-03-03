@@ -5,7 +5,6 @@
 
 .container .nav {
     width: 100%;
-    display: flex;
     justify-content: space-between;
     position: fixed;
     background-color: black;
@@ -17,7 +16,8 @@
 .container .nav ul {
     display: flex;
     justify-content: space-between;
-    margin-left: 130px;
+    margin-left: 190px;
+    
 }
 
 .container .nav ul li {
@@ -27,8 +27,9 @@
 
 .container .nav ul a {
     text-decoration: none;
-    margin-left: 90px;
     color: white;
+    margin-right: 90px;
+    font-size: 14px;
 
 }
 
@@ -282,8 +283,11 @@
 
 .container7 {
     text-align: center;
+    top: 50%;
 }
 .container8 a{
     position: relative;
     margin-left: 99%;
+}
+   
     
